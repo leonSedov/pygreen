@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre | PyGreen</title>
+<meta name="description" content="Conheça a PyGreen e seus sócios, Leon Sedov e João Daybson.">
+<meta name="theme-color" content="#1b1e21">
+<link rel="icon" type="image/svg+xml" href="img/emblema.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Pixelify+Sans:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="anuncio">Em breve, cursos da PyGreen em Ceará-Mirim. <a href="index.html#avise">Quero ser avisado</a></div>
+<header class="topo">
+<div class="wrap">
+<a class="marca" href="index.html" aria-label="PyGreen, página inicial"><img src="img/emblema.svg" alt=""><img src="img/wordmark.svg" alt="PyGreen"></a>
+<button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav><ul class="menu" id="menu"><li><a href="index.html">Início</a></li><li><a href="sobre.html" aria-current="page">Sobre</a></li><li><a href="cursos.html">Cursos</a></li></ul></nav>
+</div>
+</header>
+<main>
+<section class="topo-pag">
+<div class="wrap">
+<h1>Tecnologia ensinada na prática.</h1>
+<p class="lead" style="margin-top:1.4rem">A PyGreen é uma escola de tecnologia criada para que mais pessoas aprendam a programar e a usar o computador a seu favor.</p>
+</div>
+</section>
+
+<section>
+<div class="wrap duas">
+<div>
+<h2>Nossa história</h2>
+<p>A PyGreen ensina programação web, automações com n8n, desenvolvimento de softwares e informática básica. Começamos com turmas presenciais e agora estamos nos preparando para chegar a Ceará-Mirim.</p>
+<p style="margin-top:1rem">O nome vem do Python e da cor verde da nossa cobra, que se enrola em forma de P. Ela é o guia de cada aluno, do primeiro código ao primeiro projeto.</p>
+</div>
+<div class="foto"><img src="img/turma.jpg" alt="Turma da PyGreen reunida no pátio" loading="lazy"></div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2>Nossos sócios</h2>
+<div class="socios">
+<article class="socio">
+<div class="foto"><img src="img/leon-sedov.jpg" alt="Leon Sedov, sócio da PyGreen, de camisa branca e boné"></div>
+<h3>Leon Sedov</h3>
+<p class="papel">Sócio e instrutor</p>
+<p>Desenvolvedor full-stack e especialista em IA. Ensina programação web, automações e inteligência artificial.</p>
+</article>
+<article class="socio">
+<!-- Para adicionar a foto do João: salve em img/joao-daybson.jpg e troque a div "vazio" por:
+<div class="foto"><img src="img/joao-daybson.jpg" alt="João Daybson, sócio da PyGreen"></div> -->
+<div class="vazio"><div><b>JD</b>foto em breve</div></div>
+<h3>João Daybson</h3>
+<p class="papel">Sócio e instrutor</p>
+<p>Sócio da PyGreen e instrutor dos nossos cursos de tecnologia.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2>No que acreditamos</h2>
+<div class="valores">
+<div><h3>Prática primeiro</h3><p>Aprende-se programando. Toda aula tem exercício no computador.</p></div>
+<div><h3>Sem pressa, sem medo</h3><p>Começamos do zero e explicamos com palavras simples.</p></div>
+<div><h3>Para a vida real</h3><p>Ensinamos o que o mercado e o dia a dia realmente usam.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cm" id="avise">
+<div class="wrap">
+<div>
+<h2>Ceará-Mirim vai ter PyGreen</h2>
+<p>Estamos preparando as primeiras turmas na cidade. Deixe seu contato e você será um dos primeiros a saber quando abrirem as vagas.</p>
+<div class="carga" aria-hidden="true"></div>
+<p class="carga-t">Abrindo turmas em Ceará-Mirim...</p>
+</div>
+<form id="aviso-form" novalidate>
+<h3>Quero ser avisado</h3>
+<p>Sem compromisso. Só avisamos quando as turmas abrirem.</p>
+<label>Seu nome<input name="nome" autocomplete="name" required></label>
+<label>WhatsApp<input name="contato" type="tel" autocomplete="tel" placeholder="(84) 90000-0000" required></label>
+<button class="btn" type="submit">Avisem-me</button>
+<p id="aviso" role="status"></p>
+</form>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<a class="marca" href="index.html" aria-label="PyGreen"><img src="img/emblema.svg" alt=""><img src="img/wordmark.svg" alt="PyGreen"></a>
+<p>Escola de tecnologia · Natal e Ceará-Mirim, RN</p>
+<p>© 2026 PyGreen</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
