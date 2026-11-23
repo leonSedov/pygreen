@@ -4,7 +4,28 @@ const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // Menu no celular
 const burger = document.querySelector(".burger"), menu = document.querySelector(".menu");
-burger.addEventListener("click", () => burger.setAttribute("aria-expanded", menu.classList.toggle("aberto")));
+if (burger && menu) {
+  const fecharMenu = () => {
+    menu.classList.remove("aberto");
+    burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-label", "Abrir menu");
+  };
+  burger.addEventListener("click", () => {
+    const aberto = menu.classList.toggle("aberto");
+    burger.setAttribute("aria-expanded", String(aberto));
+    burger.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+  });
+  menu.querySelectorAll("a").forEach(link => link.addEventListener("click", fecharMenu));
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") fecharMenu();
+  });
+  document.addEventListener("click", event => {
+    if (!event.target.closest(".topo")) fecharMenu();
+  });
+  addEventListener("resize", () => {
+    if (innerWidth > 860) fecharMenu();
+  });
+}
 
 // Editor que digita código (início)
 const cod = document.getElementById("codigo"), saida = document.getElementById("saida");
